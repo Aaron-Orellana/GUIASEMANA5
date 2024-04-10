@@ -11,6 +11,7 @@ public class LabSemana5 {
         int op = 0;
         int n;
         while (inicio == 0) {
+            System.out.println("============================");
             System.out.println("1- Contar Digitos de un numero");
             System.out.println("2- Suma de Digitos de un numero");
             System.out.println("3- Maximo Comun Divisor");
@@ -32,14 +33,17 @@ public class LabSemana5 {
                 }
             }
             if (op == 1) {
+                System.out.println("============================");
                 n = f.Excepcion();
                 System.out.println("El total de digitos es: "+f.ContarDigitos(n, 0));
             }
             if (op == 2) {
+                System.out.println("============================");
                 n = f.Excepcion();
                 System.out.println("La suma de los digitos de los numeros es: " + f.SumaDigitos(n));
             }
             if (op == 3) {
+                System.out.println("============================");
                 System.out.print("Primer Numero. ");
                 int n1 = f.Excepcion();
                 System.out.print("Segundo Numero. ");
@@ -47,13 +51,15 @@ public class LabSemana5 {
                 System.out.println("El MCD entre "+(n1)+" y "+(n2)+" es: "+f.MCD(n1, n2));
             }
             if (op == 4) {
-                System.out.print("Ingrese una palabra: ");
+                System.out.println("============================");
+                System.out.print("Ingrese una cadena: ");
                 leer.nextLine();
-                String palabra = leer.nextLine();
-                System.out.println("La palabra invertida es: ");
-                System.out.println(f.InvertirCadena(palabra, -1, palabra.length() - 1));
+                String cadena = leer.nextLine();
+                System.out.println("La cadena invertida es: ");
+                System.out.println(f.InvertirCadena(cadena, -1, cadena.length() - 1));
             }
             if (op == 0){
+                System.out.println("============================");
                 System.out.println("Adios");
                 inicio = 1;
             }
